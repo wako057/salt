@@ -3,7 +3,7 @@ vim:
 
 /etc/vim/vimrc:
     file.managed:
-        - source: salt://vim/vimrc
+        - source: salt://edit/vimrc
         - mode: 644
         - user: root
         - group: root
