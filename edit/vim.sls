@@ -1,9 +1,10 @@
 vim:
-    pkg.installed
+    pkg.installed:
+        - name: {{ pillar['pkgs']['vim'] }}
 
 /etc/vim/vimrc:
     file.managed:
-        - source: salt://edit/vimrc
+        - source: {{ pillar['vimrc'] }}
         - mode: 644
         - user: root
         - group: root
