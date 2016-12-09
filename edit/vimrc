@@ -60,4 +60,5 @@ set shiftwidth=4
 set autoindent
 set hlsearch
 colorscheme desert
+au BufNewFile,BufRead *.yaml,*.yml,*.sls so /usr/share/vim/vim74/syntax/yaml.vim
 
