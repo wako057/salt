@@ -4,7 +4,9 @@ vim:
 
 /etc/vim/vimrc:
     file.managed:
-        - source: {{ pillar['vimrc'] }}
+#        - source: {{ pillar.get('edit.vimrc') }}
+        - source: salt://edit/vimrc
+        - skip_verify: true
         - mode: 644
         - user: root
         - group: root
