@@ -1,3 +1,4 @@
 emacs:
-    pkg.installed
+    pkg.installed:
+        - name: emacs
 

@@ -11,6 +11,7 @@ ssh:
             - pkg: openssh-server
             - file: /etc/ssh/ssh_banner
             - file: /etc/ssh/sshd_config
+        - full_restart: True
 
 /etc/ssh/sshd_config:
     file.managed:
